@@ -42,3 +42,7 @@ footer {
 .site-wrapper {
   padding-bottom: 180px;
 }
+
+body { 
+  display: none;
+}
