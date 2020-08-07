@@ -1,3 +1,12 @@
+/* ==UserStyle==
+@name           Duckduckgo
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Duck duck go widescreen style
+@author         Hayden
+@updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Duckduckgo.user.css
+==/UserStyle== */
+
 .result__body b, .result__body strong {
     background-color: #ff09;
     padding: 2px;
