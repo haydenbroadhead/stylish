@@ -1,1 +1,22 @@
+.result__body b, .result__body strong {
+    background-color: #ff09;
+    padding: 2px;
+}
 
+#links .result__title b, #links .result__title strong {
+    font-weight: 500 !important;
+}
+
+
+.results--main {
+    max-width: 800px;
+}
+
+.results--sidebar {
+    margin-left: 840px;
+    max-width: 700px;
+}
+
+.cw, .cw--c P{
+    max-width: 1500px;
+}
