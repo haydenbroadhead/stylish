@@ -1,48 +1,39 @@
 /* ==UserStyle==
 @name           Duckduckgo
-@namespace      github.com/openstyles/stylus
+@namespace      stylish
 @version        1.0.0
+@homepageURL    https://github.com/haydenbroadhead/stylish
+@updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Duckduckgo.user.css
 @description    Duck duck go widescreen style
 @author         Hayden
-@license      unlicense
-@preprocessor default
-@updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Duckduckgo.user.css
+@license        unlicense
+@preprocessor   uso
 ==/UserStyle== */
-
-.result__body b, .result__body strong {
-  background-color: #ff09;
-  padding: 2px;
-}
-
-#links .result__title b, #links .result__title strong {
-  font-weight: 500 !important;
-}
-
-.results--main {
-  max-width: 800px;
-}
-
-.results--sidebar {
-  margin-left: 840px;
-  max-width: 700px;
-}
-
-.cw, .cw--c P {
-  max-width: 1500px;
-}
-
-.serp__bottom-right {
-  display: none;
-}
-
-footer {
-  display: none;
-}
-
-.site-wrapper {
-  padding-bottom: 180px;
-}
-
-body { 
-  display: none;
+@-moz-document domain("duckduckgo.com") {
+  .result__body b, .result__body strong {
+    background-color: #ff09;
+    padding: 2px;
+  }
+  #links .result__title b, #links .result__title strong {
+    font-weight: 500 !important;
+  }
+  .results--main {
+    max-width: 800px;
+  }
+  .results--sidebar {
+    margin-left: 840px;
+    max-width: 700px;
+  }
+  .cw, .cw--c P {
+    max-width: 1500px;
+  }
+  .serp__bottom-right {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .site-wrapper {
+    padding-bottom: 180px;
+  }
 }
