@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           Stackoverflow
+@namespace      stylish
+@version        1.0.0
+@homepageURL    https://github.com/haydenbroadhead/stylish
+@updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Stackoverflow.user.css
+@description    Cleans up the pages on stackoverflow, such as removing uncessary sidebar content and extending the text area.
+@author         Hayden
+@license        unlicense
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com") {
+  body.question-page .container {
+      max-width: 2000px;
+  }
+
+  #left-sidebar {
+      width: 0;
+  }
+
+  #sidebar, .sidebar {
+    width: 200px;
+    margin-right: -200px;
+      opacity: 0;
+  }
+
+  #sidebar:hover, .sidebar:hover {
+      background-color:white;
+      opacity: 1;
+      padding: 10px;
+  }
+
+  #mainbar, .mainbar {
+    width: calc(100% - 24px);
+  }
+
+  .post-text pre, .wmd-preview pre {
+      max-width: 1500px;
+    word-wrap: normal;
+    width: min-content;
+    padding: 20px 70px 20px 20px;
+    margin-left: 20px;
+    box-shadow: 10px 8px 6px 0px rgba(171,171,171,0.57);
+  }
+}
