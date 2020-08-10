@@ -1,9 +1,9 @@
-# stylish
-Install:
+# Installation
 https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
-userstyles:
+# userstyles
 https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Duckduckgo.user.css
+https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Stackoverflow.user.css
 
 # Note
 Stylus extension only will update when version is updated
