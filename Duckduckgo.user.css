@@ -9,9 +9,11 @@
 @license        unlicense
 @preprocessor   uso
 ==/UserStyle== */
+
 @-moz-document domain("duckduckgo.com") {
   .result__body b, .result__body strong {
-    background-color: #ff09;
+    background-color: #e6e6e6;
+    margin: 1px;
     padding: 2px;
   }
   #links .result__title b, #links .result__title strong {
@@ -27,13 +29,30 @@
   .cw, .cw--c P {
     max-width: 1500px;
   }
+  .zcm .is-active {
+    height: 30px;
+    border-bottom: solid 2px #4495d4;
+  }
+  .header__logo.js-logo-ddg {
+    display: none;
+  }
+  .feedback-prompt {
+    display: none;
+  }
+  .header--aside__item.showcase {
+    display: none;
+  }
+  .header--aside__item.social {
+    display: none;
+  }
+  /*Remove feedback */
   .serp__bottom-right {
     display: none;
   }
-  footer {
-    display: none;
+  body .footer {
+    display: none !important;
   }
   .site-wrapper {
-    padding-bottom: 180px;
+    padding-bottom: 160px;
   }
 }
