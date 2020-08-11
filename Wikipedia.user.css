@@ -9,39 +9,33 @@
 @license        unlicense
 @preprocessor   uso
 ==/UserStyle== */
+
 @-moz-document domain("wikipedia.com") {
-#content {
-    max-width: 900px;
-    border-right-width: 1px;
-    margin:  auto;
-}
-
-#pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
-    display: none;
-}
-
-#left-navigation {
-  display: none;
-}
-
-#p-views {
-  display: none;
-}
-
-#right-navigation {
-	max-width: 900px;
-	margin: 0 auto 0 auto;
-	float: none;
-  padding: 1.25em 0 1.5em 1.5em;
-}
-
-#p-search {
-  float: right;
-  margin-right: -10px;
-}
-
-#mw-head {
-  top: 10px;
-  
-}
+    #content {
+        max-width: 900px;
+        border-right-width: 1px;
+        margin: auto;
+    }
+    #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
+        display: none;
+    }
+    #left-navigation {
+        display: none;
+    }
+    #p-views {
+        display: none;
+    }
+    #right-navigation {
+        max-width: 900px;
+        margin: 0 auto 0 auto;
+        float: none;
+        padding: 1.25em 0 1.5em 1.5em;
+    }
+    #p-search {
+        float: right;
+        margin-right: -10px;
+    }
+    #mw-head {
+        top: 10px;
+    }
 }
