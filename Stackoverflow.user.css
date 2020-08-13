@@ -12,23 +12,23 @@
 
 @-moz-document domain("stackoverflow.com") {
   body.question-page .container {
-      max-width: 2000px;
+    max-width: 2000px;
   }
 
   #left-sidebar {
-      width: 0;
+    width: 0;
   }
 
   #sidebar, .sidebar {
     width: 200px;
     margin-right: -200px;
-      opacity: 0;
+    opacity: 0;
   }
 
   #sidebar:hover, .sidebar:hover {
-      background-color:white;
-      opacity: 1;
-      padding: 10px;
+    background-color:white;
+    opacity: 1;
+    padding: 10px;
   }
 
   #mainbar, .mainbar {
@@ -36,7 +36,7 @@
   }
 
   .post-text pre, .wmd-preview pre {
-      max-width: 1500px;
+    max-width: 1500px;
     word-wrap: normal;
     width: min-content;
     padding: 20px 70px 20px 20px;

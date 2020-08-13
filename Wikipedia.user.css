@@ -11,102 +11,102 @@
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org") {
-    @media only screen and (min-width: 480px) {
-        #mw-panel > :not(#p-logo) {
-            display: none;
-        }
-        #p-logo .mw-wiki-logo {
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg");
-            font-family: "Linux Libertine", "Georgia", "Times", serif;
-            background-size: contain;
-            background-position: top left;
-            background-repeat: no-repeat;
-            display: block;
-            width: 60px;
-            height: 160px;
-            text-decoration: none;
-            position: absolute;
-            left: 10px;
-        }
-        #content {
-            max-width: 900px;
-            border-right-width: 1px;
-            margin: auto;
-        }
-        #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
-            display: none;
-        }
-        #left-navigation {
-            display: none;
-        }
-        #p-views {
-            display: none;
-        }
-        #p-lang {
-            display: none;
-        }
-        .after-portlet .after-portlet-lang {
-            display: none;
-        }
-        #right-navigation {
-            max-width: 900px;
-            margin: 0 auto 0 auto;
-            float: none;
-            padding: 1.25em 0 1.5em 1.5em;
-        }
-        #p-search {
-            float: right;
-            margin-right: 10px;
-        }
-        #mw-head {
-            top: 10px;
-        }
+  @media only screen and (min-width: 480px) {
+    #mw-panel > :not(#p-logo) {
+      display: none;
     }
-    @media only screen and (min-width: 1000px) {
-        #mw-panel > :not(#p-logo) {
-            display: none;
-        }
-        body {
-            margin: 0;
-        }
-        #content {
-            max-width: 900px;
-        }
+    #p-logo .mw-wiki-logo {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg");
+      font-family: "Linux Libertine", "Georgia", "Times", serif;
+      background-size: contain;
+      background-position: top left;
+      background-repeat: no-repeat;
+      display: block;
+      width: 60px;
+      height: 160px;
+      text-decoration: none;
+      position: absolute;
+      left: 10px;
     }
-    @media only screen and (min-width: 1220px) {
-        #p-logo .mw-wiki-logo {
-            background-position: center center;
-            background-size: cover;
-            height: 160px;
-            width: 120px;
-            text-decoration: none;
-            position: static;
-            left: 0;
-            top: 0;
-            margin-left: 15px;
-        }
-        #mw-panel> :not(#p-logo) {
-            display: block;
-        }
-        #content {
-            max-width: 900px;
-        }
-        #p-search {
-            margin-right: -10px;
-        }
+    #content {
+      max-width: 900px;
+      border-right-width: 1px;
+      margin: auto;
     }
-    @media only screen and (min-width: 1900px) {
-        #mw-panel> :not(#p-logo) {
-            display: block;
-        }
-        #right-navigation {
-            max-width: 1200px;
-            margin: 0 auto 0 auto;
-            float: none;
-            padding: 1.25em 0 1.5em 1.5em;
-        }
-        #content {
-            max-width: 1200px;
-        }
+    #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
+      display: none;
     }
+    #left-navigation {
+      display: none;
+    }
+    #p-views {
+      display: none;
+    }
+    #p-lang {
+      display: none;
+    }
+    .after-portlet .after-portlet-lang {
+      display: none;
+    }
+    #right-navigation {
+      max-width: 900px;
+      margin: 0 auto 0 auto;
+      float: none;
+      padding: 1.25em 0 1.5em 1.5em;
+    }
+    #p-search {
+      float: right;
+      margin-right: 10px;
+    }
+    #mw-head {
+      top: 10px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    #mw-panel> :not(#p-logo) {
+      display: none;
+    }
+    body {
+      margin: 0;
+    }
+    #content {
+      max-width: 900px;
+    }
+  }
+  @media only screen and (min-width: 1220px) {
+    #p-logo .mw-wiki-logo {
+      background-position: center center;
+      background-size: cover;
+      height: 160px;
+      width: 120px;
+      text-decoration: none;
+      position: static;
+      left: 0;
+      top: 0;
+      margin-left: 15px;
+    }
+    #mw-panel> :not(#p-logo) {
+      display: block;
+    }
+    #content {
+      max-width: 900px;
+    }
+    #p-search {
+      margin-right: -10px;
+    }
+  }
+  @media only screen and (min-width: 1900px) {
+    #mw-panel> :not(#p-logo) {
+      display: block;
+    }
+    #right-navigation {
+      max-width: 1200px;
+      margin: 0 auto 0 auto;
+      float: none;
+      padding: 1.25em 0 1.5em 1.5em;
+    }
+    #content {
+      max-width: 1200px;
+    }
+  }
 }
