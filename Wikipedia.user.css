@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.0.2
+@version        1.1.0
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -11,6 +11,12 @@
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org") {
+    @media only screen and (min-width: 1900px) {
+        #content {
+            max-width: 1200px;
+        }
+    }
+
     .mw-wiki-logo {
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg");
         background-size: 127px;
