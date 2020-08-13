@@ -63,7 +63,7 @@
         }
     }
     @media only screen and (min-width: 1000px) {
-        #mw-panel> :not(#p-logo) {
+        #mw-panel > :not(#p-logo) {
             display: none;
         }
         body {
@@ -83,6 +83,7 @@
             position: static;
             left: 0;
             top: 0;
+            margin-left: 15px;
         }
         #mw-panel> :not(#p-logo) {
             display: block;
