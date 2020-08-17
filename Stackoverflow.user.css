@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stackoverflow
 @namespace      stylish
-@version        1.0.0
+@version        1.0.1
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Stackoverflow.user.css
 @description    Cleans up the pages on stackoverflow, such as removing uncessary sidebar content and extending the text area.
@@ -36,7 +36,7 @@
   }
 
   .post-text pre, .wmd-preview pre {
-    max-width: 1500px;
+    max-width: 1200px;
     word-wrap: normal;
     width: min-content;
     padding: 20px 70px 20px 20px;
