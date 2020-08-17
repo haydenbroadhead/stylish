@@ -21,14 +21,9 @@
 
   #sidebar, .sidebar {
     width: 200px;
-    margin-right: -200px;
-    opacity: 0;
-  }
-
-  #sidebar:hover, .sidebar:hover {
-    background-color:white;
-    opacity: 1;
-    padding: 10px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px
   }
 
   #mainbar, .mainbar {
@@ -36,7 +31,7 @@
   }
 
   .post-text pre, .wmd-preview pre {
-    max-width: 1200px;
+    max-width: 1100px;
     word-wrap: normal;
     width: min-content;
     padding: 20px 70px 20px 20px;
