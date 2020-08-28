@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Duckduckgo
 @namespace      stylish
-@version        1.0.2
+@version        1.0.3
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Duckduckgo.user.css
 @description    Duck duck go widescreen style
@@ -11,6 +11,11 @@
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
+  /* Domain blocking */
+  [data-domain="www.thesun.co.uk"], [data-domain="www.mirror.co.uk"], [data-domain="www.dailymail.co.uk"] {
+    display: none;
+  }
+
   .result__body b, .result__body strong {
     background-color: #e6e6e6;
     margin: 1px;
