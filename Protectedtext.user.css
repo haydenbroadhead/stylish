@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Protectedtext
+@namespace      stylish
+@version        1.0.0
+@homepageURL    https://github.com/haydenbroadhead/stylish
+@updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Protectedtext.user.css
+@description    Protectedtext.com
+@author         Hayden
+@license        unlicense
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document domain("protectedtext.com") {
+
+
+}

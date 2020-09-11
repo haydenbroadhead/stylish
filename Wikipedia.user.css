@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.1.2
+@version        1.1.4
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -12,6 +12,9 @@
 
 @-moz-document domain("wikipedia.org") {
   @media only screen and (min-width: 480px) {
+    #footer-icons { 
+      display: none;
+    }
     #mw-panel > :not(#p-logo) {
       display: none;
     }
@@ -32,6 +35,9 @@
       max-width: 900px;
       border-right-width: 1px;
       margin: auto;
+    }
+    #siteNotice {
+      display: none;
     }
     #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
       display: none;
