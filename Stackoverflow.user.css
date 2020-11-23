@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stackoverflow
 @namespace      stylish
-@version        1.0.2
+@version        1.0.3
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Stackoverflow.user.css
 @description    Cleans up the pages on stackoverflow, such as removing uncessary sidebar content and extending the text area.
@@ -23,7 +23,8 @@
     width: 200px;
     position: absolute;
     right: 0;
-    margin-right: 10px
+    margin-right: 10px;
+    display: block;
   }
 
   #mainbar, .mainbar {
@@ -38,4 +39,11 @@
     margin-left: 20px;
     box-shadow: 10px 8px 6px 0px rgba(171,171,171,0.57);
   }
+  
+  @media only screen and (max-width: 1400px) {
+    #sidebar, .sidebar {
+      display: none;
+    }
+  }
+
 }
