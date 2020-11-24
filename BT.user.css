@@ -11,6 +11,8 @@
 ==/UserStyle== */
 
 @-moz-document domain("bt.com") {
+  /* ====================================== */
+  /* Pukka */
   body:before {
     content: "Pukka";
     position: absolute;
@@ -70,6 +72,8 @@
       opacity: 1;
     }
   }
+
+  /* ====================================== */
 
   .bt-navbar-universal-nav {
     display: none;
