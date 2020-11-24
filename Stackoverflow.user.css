@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stackoverflow
 @namespace      stylish
-@version        1.0.4
+@version        1.0.5
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Stackoverflow.user.css
 @description    Cleans up the pages on stackoverflow, such as removing uncessary sidebar content and extending the text area.
@@ -13,23 +13,26 @@
 @-moz-document domain("stackoverflow.com") {
   /* ====================================== */
   /* Pukka */
-  body:before {
+  html:before {
     content: "Pukka";
     position: absolute;
     padding: 5px;
     background: white;
-    /*! box-shadow: 5px 10px 8px #888; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     margin: 5px;
-    border: 2px #5514b4;
+    border: 2px #5514b4 solid;
+    color: #5514b4;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    z-index: 1000;
+    z-index: 99999999;
     border-radius: 4px;
     font-style: italic;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
-  body:before {
+  html:before {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -74,6 +77,7 @@
   }
 
   /* ====================================== */
+
   body.question-page .container {
     max-width: 2000px;
   }
@@ -86,9 +90,16 @@
   .sidebar {
     width: 200px;
     position: absolute;
+    top: 0;
     right: 0;
     margin-right: 10px;
     display: block;
+    background-color: white;
+    margin-top: 2em;
+  }
+
+  .top-bar .list-reset {
+    display: none;
   }
 
   #mainbar,
