@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           BT
 @namespace      stylish
-@version        1.0.0
+@version        1.0.1
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/BT.user.css
 @description    Removes any trash from bt, particulary for bt sport
@@ -77,5 +77,13 @@
 
   .bt-navbar-universal-nav {
     display: none;
+  }
+
+  .schedule-hero-on-off-time {
+    display: none;
+  }
+
+  .now-next .ellipsis {
+    white-space: normal;
   }
 }
