@@ -82,6 +82,14 @@
     #content {
       max-width: 900px;
     }
+    .infobox {
+      position: fixed;
+      left: calc(50% + 450px + 2em);
+      background: white;
+    }
+    #frb-inline {
+      display: none !important;
+    }
   }
   @media only screen and (min-width: 1220px) {
     #p-logo .mw-wiki-logo {
