@@ -126,7 +126,7 @@
     }
 
     .mw-parser-output table:first-of-type * {
-      position: relative !important;
+      /* position: relative !important; */
     }
 
     .mw-parser-output > table.infobox:first-of-type tbody { 
