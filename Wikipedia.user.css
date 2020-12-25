@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.3.2
+@version        1.4.0
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -11,168 +11,213 @@
 ==/UserStyle== */
 
 @-moz-document domain("wikipedia.org") {
-  @media only screen and (min-width: 480px) {
-    #frb-inline.frb {
-      display: none;
+    @media only screen and (min-width: 480px) {
+        #frb-inline.frb {
+            display: none;
+        }
+        #footer-icons {
+            display: none;
+        }
+        #mw-panel> :not(#p-logo) {
+            display: none;
+        }
+        #p-logo .mw-wiki-logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg");
+            font-family: "Linux Libertine", "Georgia", "Times", serif;
+            background-size: contain;
+            background-position: top left;
+            background-repeat: no-repeat;
+            display: block;
+            width: 60px;
+            height: 160px;
+            text-decoration: none;
+            position: absolute;
+            left: 10px;
+        }
+        #content {
+            max-width: 900px;
+            border-right-width: 1px;
+            margin: auto;
+        }
+        #siteNotice {
+            display: none;
+        }
+        #pt-anonuserpage,
+        #pt-anontalk,
+        #pt-anoncontribs,
+        #pt-createaccount,
+        #pt-login {
+            display: none;
+        }
+        #left-navigation {
+            display: none;
+        }
+        #p-views {
+            display: none;
+        }
+        #p-lang {
+            display: none;
+        }
+        .after-portlet .after-portlet-lang {
+            display: none;
+        }
+        #right-navigation {
+            max-width: 900px;
+            margin: 0 auto 0 auto;
+            float: none;
+            padding: 1.25em 0 1.5em 1.5em;
+        }
+        #p-search {
+            float: right;
+            margin-right: 10px;
+        }
+        #mw-head {
+            top: 10px;
+        }
+        #firstHeading {
+            position: sticky;
+            width: 900px;
+            background: #fff;
+            display: block;
+            z-index: 10;
+            top: 0;
+        }
+        .mw-body-content h2 {
+            position: sticky;
+            top: calc(2em - 4px);
+            background: white;
+        }
+        .reflist .mw-references-columns li {
+            padding: 0.5em;
+        }
+        .reflist .mw-references-columns li:nth-child(2n+1) {
+            background: #f6f6f6;
+        }
+        .reflist .mw-references-columns {
+            column-width: auto;
+        }
     }
-
-    #footer-icons { 
-      display: none;
+    @media only screen and (min-width: 1000px) {
+        #mw-panel> :not(#p-logo) {
+            display: none;
+        }
+        body {
+            margin: 0;
+        }
+        #content {
+            max-width: 900px;
+        }
+        #frb-inline {
+            display: none !important;
+        }
     }
-    #mw-panel > :not(#p-logo) {
-      display: none;
+    @media only screen and (min-width: 1220px) {
+        #p-logo .mw-wiki-logo {
+            background-position: center center;
+            background-size: cover;
+            height: 160px;
+            width: 120px;
+            text-decoration: none;
+            position: static;
+            left: 0;
+            top: 0;
+            margin-left: 15px;
+        }
+        #mw-panel> :not(#p-logo) {
+            display: block;
+        }
+        #content {
+            max-width: 900px;
+        }
+        #p-search {
+            margin-right: -10px;
+        }
     }
-    #p-logo .mw-wiki-logo {
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg");
-      font-family: "Linux Libertine", "Georgia", "Times", serif;
-      background-size: contain;
-      background-position: top left;
-      background-repeat: no-repeat;
-      display: block;
-      width: 60px;
-      height: 160px;
-      text-decoration: none;
-      position: absolute;
-      left: 10px;
+    @media only screen and (min-width: 1400px) {
+        #p-logo .mw-wiki-logo {
+            background-position: center center;
+            background-size: cover;
+            height: 100px;
+            width: 80px;
+        }
+        #mw-panel> :not(#p-logo) {
+            display: none;
+        }
+        body {
+            margin: 0;
+        }
+        #content {
+            max-width: 900px;
+            margin: 1em;
+        }
+        #frb-inline {
+            display: none !important;
+        }
+        .mw-parser-output>table.infobox:first-of-type {
+            position: fixed;
+            left: calc(900px + 8em);
+            background: white;
+            right: 5em;
+            top: calc(7em + 3px);
+        }
+        .mw-parser-output table:first-of-type * {
+            /* position: relative !important; */
+        }
+        .mw-parser-output>table.infobox:first-of-type tbody {
+            display: block;
+            max-height: 80vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .mw-parser-output>table.infobox:first-of-type tr {
+            width: 50%;
+            min-width: 10em;
+        }
     }
-    #content {
-      max-width: 900px;
-      border-right-width: 1px;
-      margin: auto;
+    @media only screen and (min-width: 1700px) {
+        #mw-panel> :not(#p-logo) {
+            display: block;
+        }
+        #p-logo .mw-wiki-logo {
+            height: 160px;
+            width: 120px;
+        }
+        .mw-parser-output>table.infobox:first-of-type {
+            position: fixed;
+            left: initial;
+            background: white;
+            right: 3em;
+            top: 6em;
+        }
+        #content {
+            margin: auto;
+        }
+        .mw-parser-output table:first-of-type * {
+            /* position: relative !important; */
+        }
+        .mw-parser-output>table.infobox:first-of-type tbody {
+            display: block;
+            max-height: 80vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .mw-parser-output>table.infobox:first-of-type tr {
+            width: 50%;
+            min-width: 10em;
+        }
     }
-    #siteNotice {
-      display: none;
+    @media only screen and (min-width: 1900px) {
+        #mw-panel> :not(#p-logo) {
+            display: block;
+        }
+        #right-navigation {
+            max-width: 1200px;
+            margin: 0 auto 0 auto;
+            float: none;
+            padding: 1.25em 0 1.5em 1.5em;
+        }
+        #content {
+            max-width: 1200px;
+        }
     }
-    #pt-anonuserpage, #pt-anontalk, #pt-anoncontribs, #pt-createaccount, #pt-login {
-      display: none;
-    }
-    #left-navigation {
-      display: none;
-    }
-    #p-views {
-      display: none;
-    }
-    #p-lang {
-      display: none;
-    }
-    .after-portlet .after-portlet-lang {
-      display: none;
-    }
-    #right-navigation {
-      max-width: 900px;
-      margin: 0 auto 0 auto;
-      float: none;
-      padding: 1.25em 0 1.5em 1.5em;
-    }
-    #p-search {
-      float: right;
-      margin-right: 10px;
-    }
-    #mw-head {
-      top: 10px;
-    }
-
-    #firstHeading {
-      position: sticky;
-      width: 900px;
-      background: #fff;
-      display: block;
-      z-index: 10;
-      top: 0;
-    }
-
-    .mw-body-content h2 {
-      position: sticky;
-      top: calc(2em - 4px);
-      background: white;
-    }
-
-    .reflist .mw-references-columns li {
-      padding: 0.5em;
-    }
-
-    .reflist .mw-references-columns li:nth-child(2n+1) {
-      background: #f6f6f6;
-    }
-
-    .reflist .mw-references-columns {
-      column-width: auto;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    #mw-panel> :not(#p-logo) {
-      display: none;
-    }
-    body {
-      margin: 0;
-    }
-    #content {
-      max-width: 900px;
-    }
-    #frb-inline {
-      display: none !important;
-    }
-  }
-  @media only screen and (min-width: 1220px) {
-    #p-logo .mw-wiki-logo {
-      background-position: center center;
-      background-size: cover;
-      height: 160px;
-      width: 120px;
-      text-decoration: none;
-      position: static;
-      left: 0;
-      top: 0;
-      margin-left: 15px;
-    }
-    #mw-panel> :not(#p-logo) {
-      display: block;
-    }
-    #content {
-      max-width: 900px;
-    }
-    #p-search {
-      margin-right: -10px;
-    }
-
-    .mw-parser-output > table.infobox:first-of-type {
-     position: fixed;
-      /* left: calc(50% + 450px + 2em); */
-      background: white;
-      right: 3em;
-      top: 6em;
-    }
-
-    .mw-parser-output table:first-of-type * {
-      /* position: relative !important; */
-    }
-
-    .mw-parser-output > table.infobox:first-of-type tbody { 
-      display: block;
-      max-height: 80vh;
-      overflow-y:auto;
-      overflow-x: hidden;
-    }
-
-    .mw-parser-output > table.infobox:first-of-type tr { 
-      width:50%;
-      min-width: 10em;
-    }
-  }
-  @media only screen and (min-width: 1900px) {
-    #mw-panel> :not(#p-logo) {
-      display: block;
-    }
-    #right-navigation {
-      max-width: 1200px;
-      margin: 0 auto 0 auto;
-      float: none;
-      padding: 1.25em 0 1.5em 1.5em;
-    }
-    #content {
-      max-width: 1200px;
-    }
-
-  }
-  
 }
