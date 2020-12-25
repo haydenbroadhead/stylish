@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.2.7
+@version        1.3.0
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -79,6 +79,24 @@
       display: block;
       z-index: 10;
       top: 0;
+    }
+
+    .mw-body-content h2 {
+      position: sticky;
+      top: calc(2em - 4px);
+      background: white;
+    }
+
+    .reflist .mw-references-columns li {
+      padding: 0.5em;
+    }
+
+    .reflist .mw-references-columns li:nth-child(2n+1) {
+      background: #f6f6f6;
+    }
+
+    .reflish .mw-references-columns {
+      column-width:0;
     }
   }
   @media only screen and (min-width: 1000px) {
