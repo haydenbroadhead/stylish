@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.4.0
+@version        1.5.0
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -160,9 +160,6 @@
             right: 5em;
             top: calc(7em + 3px);
         }
-        .mw-parser-output table:first-of-type * {
-            /* position: relative !important; */
-        }
         .mw-parser-output>table.infobox:first-of-type tbody {
             display: block;
             max-height: 80vh;
@@ -172,6 +169,11 @@
         .mw-parser-output>table.infobox:first-of-type tr {
             width: 50%;
             min-width: 10em;
+        }
+    }
+    @media only screen and (min-width: 1400px) and (max-width: 1699px) {
+        .mw-parser-output>table.infobox:first-of-type {
+            width: auto !important;
         }
     }
     @media only screen and (min-width: 1700px) {
