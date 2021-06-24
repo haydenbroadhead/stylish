@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Wikipedia
 @namespace      stylish
-@version        1.5.1
+@version        1.5.2
 @homepageURL    https://github.com/haydenbroadhead/stylish
 @updateURL      https://raw.githubusercontent.com/haydenbroadhead/stylish/master/Wikipedia.user.css
 @description    Formats Wikipedia from being edge to edge
@@ -80,7 +80,6 @@
     }
     #firstHeading {
       position: sticky;
-      width: 900px;
       background: #fff;
       display: block;
       z-index: 10;
@@ -137,49 +136,7 @@
       margin-right: -10px;
     }
   }
-  @media only screen and (min-width: 1400px) {
-    #p-logo .mw-wiki-logo {
-      background-position: center center;
-      background-size: cover;
-      height: 100px;
-      width: 80px;
-    }
-    #mw-panel > :not(#p-logo) {
-      display: none;
-    }
-    body {
-      margin: 0;
-    }
-    #content {
-      max-width: 900px;
-      margin: 1em;
-    }
-    #frb-inline {
-      display: none !important;
-    }
-    .mw-parser-output > table.infobox:first-of-type {
-      position: fixed;
-      left: calc(900px + 8em);
-      background: white;
-      right: 5em;
-      top: calc(7em + 3px);
-    }
-    .mw-parser-output > table.infobox:first-of-type tbody {
-      display: block;
-      max-height: 80vh;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-    .mw-parser-output > table.infobox:first-of-type tr {
-      width: 50%;
-      min-width: 10em;
-    }
-  }
-  @media only screen and (min-width: 1400px) and (max-width: 1699px) {
-    .mw-parser-output > table.infobox:first-of-type {
-      width: auto !important;
-    }
-  }
+
   @media only screen and (min-width: 1700px) {
     #mw-panel > :not(#p-logo) {
       display: block;
